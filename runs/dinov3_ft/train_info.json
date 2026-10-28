@@ -1,0 +1,13 @@
+{
+  "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "steps": 600,
+  "skus_per_batch": 12,
+  "imgs_per_sku": 6,
+  "unfreeze_blocks": 4,
+  "lr": 1e-05,
+  "temperature": 0.07,
+  "train_images": 430,
+  "train_skus": 110,
+  "final_ema_loss": 1.756539,
+  "final_batch_recall1": 0.9964
+}

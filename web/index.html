@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shelf Product Recognition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      Shelf Recognition
+    </div>
+    <span class="brand-sub">YOLO detection &middot; CLIP + FAISS SKU matching</span>
+    <nav class="topbar-nav">
+      <a class="nav-link" href="catalog.html">Catalog</a>
+      <a class="nav-link" href="dashboard.html">Data dashboard</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Upload -->
+    <section id="upload-section" class="card upload-card">
+      <div id="dropzone" class="dropzone" tabindex="0">
+        <svg viewBox="0 0 24 24" class="dz-icon" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 16V4m0 0-4 4m4-4 4 4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke-linecap="round" />
+        </svg>
+        <p class="dz-title">Drop a shelf photo here</p>
+        <p class="dz-sub">or <span class="dz-browse">browse files</span> &mdash; JPG / PNG, max 25&nbsp;MB</p>
+        <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp,image/bmp" hidden />
+      </div>
+
+      <div id="preview-row" class="preview-row hidden">
+        <img id="preview-img" class="preview-img" alt="Selected shelf photo" />
+        <div class="preview-meta">
+          <p id="preview-name" class="preview-name"></p>
+          <p id="preview-size" class="preview-size"></p>
+          <div class="preview-actions">
+            <button id="analyze-btn" class="btn btn-primary">Analyze shelf</button>
+            <button id="clear-btn" class="btn btn-ghost">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="loader" class="loader hidden">
+        <div class="spinner"></div>
+        <p id="loader-text">Analyzing shelf&hellip;</p>
+      </div>
+
+      <p id="error-box" class="error hidden"></p>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="hidden">
+      <div class="stats-row" id="stats-row"></div>
+
+      <div class="card">
+        <h2 class="card-title">Annotated shelf</h2>
+        <p class="card-sub">
+          <span class="legend legend-green"></span> recognized SKU
+          <span class="legend legend-orange"></span> unknown product
+        </p>
+        <p id="shelf-filter-note" class="shelf-filter-note hidden"></p>
+        <a id="annotated-link" class="shelf-stage" target="_blank" rel="noopener">
+          <img id="annotated-img" class="annotated-img" alt="Annotated shelf photo" />
+          <canvas id="box-canvas" class="box-canvas"></canvas>
+        </a>
+      </div>
+
+      <div class="card review-card">
+        <div class="review-tabs" role="tablist">
+          <button type="button" class="tab-btn tab-active" data-tab="crops" role="tab" aria-selected="true">
+            Crops <span id="crop-count" class="pill"></span>
+          </button>
+          <button type="button" class="tab-btn" data-tab="catalog" role="tab" aria-selected="false">
+            Catalog matches
+          </button>
+        </div>
+
+        <div id="tab-crops" class="tab-panel">
+          <div class="crop-filters" id="crop-filters">
+            <button class="chip chip-active" data-filter="all">All</button>
+            <button class="chip" data-filter="recognized">Recognized</button>
+            <button class="chip" data-filter="unknown">Unknown</button>
+            <button class="chip" data-filter="changed">Changed</button>
+          </div>
+          <div id="crops-grid" class="crops-grid"></div>
+          <div class="save-bar" id="save-bar">
+            <div>
+              <div class="save-bar-title" id="save-summary">No SKU changes yet</div>
+              <p class="save-bar-sub">Only crops you reassign are copied into the gallery folders.</p>
+            </div>
+            <button type="button" id="save-corrections" class="btn btn-primary" disabled>Save corrections</button>
+          </div>
+          <p id="save-status" class="save-status hidden"></p>
+        </div>
+
+        <div id="tab-catalog" class="tab-panel hidden">
+          <p class="card-sub">Facing counts on this shelf. Click a SKU to filter crops.</p>
+          <input id="catalog-search" class="catalog-search" type="search" placeholder="Search catalog SKUs&hellip;" />
+          <div id="gallery-list" class="gallery-list"></div>
+          <button type="button" id="unknown-summary" class="unknown-summary"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="crop-lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Crop preview">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" alt="" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

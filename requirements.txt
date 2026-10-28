@@ -1,0 +1,16 @@
+# Install a CUDA-enabled PyTorch build appropriate for your system first when
+# using a GPU; see https://pytorch.org/get-started/locally/.
+torch>=2.1
+transformers>=4.56
+opencv-python>=4.8
+Pillow>=10.0
+tqdm>=4.66
+matplotlib>=3.8
+scipy >= 1.11.0
+ultralytics>=8.3.0
+faiss-cpu>=1.8.0
+open-clip-torch>=2.24.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+labelImg>=1.12.1

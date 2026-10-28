@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalog Data Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      Data Dashboard
+    </div>
+    <span class="brand-sub">SKU catalog &middot; eval set &middot; similarity</span>
+    <span class="topbar-spacer"></span>
+    <span id="generated" class="brand-sub"></span>
+    <button id="refresh-btn" class="btn btn-ghost btn-sm" type="button">Refresh</button>
+    <nav class="topbar-nav">
+      <a class="nav-link" href="catalog.html">Catalog</a>
+      <a class="nav-link" href="index.html">Shelf recognition</a>
+    </nav>
+  </header>
+
+  <main class="container dash">
+    <p id="status" class="dash-status">Loading data&hellip;</p>
+
+    <section id="kpis" class="kpi-grid"></section>
+
+    <section class="card">
+      <h2 class="card-title">Readiness checks</h2>
+      <p class="card-sub">Things that quietly hurt the model or make the eval numbers misleading.</p>
+      <ul id="checks" class="checks"></ul>
+    </section>
+
+    <section class="two-col">
+      <div class="card">
+        <h2 class="card-title">Gallery images per SKU</h2>
+        <p class="card-sub">Number of SKUs by how many photos they have. Aim for 3+ everywhere, 10+ for lookalike families.</p>
+        <div id="dist-chart" class="bars"></div>
+      </div>
+      <div class="card">
+        <h2 class="card-title">By packaging</h2>
+        <p class="card-sub">SKUs, gallery images and eval crops per packaging type.</p>
+        <table class="mini-table" id="pack-table"></table>
+        <div id="index-box" class="index-box"></div>
+      </div>
+    </section>
+
+    <section class="card" id="sim-card">
+      <h2 class="card-title">Most similar SKUs</h2>
+      <p class="card-sub">
+        Cosine similarity between gallery embeddings of two <em>different</em> SKUs (best image pair).
+        100% = identical. These are the pairs the model is most likely to confuse.
+      </p>
+      <div class="sim-controls">
+        <button id="sim-btn" class="btn btn-primary" type="button">Find most similar SKU pairs</button>
+        <label class="inline-field">Show top
+          <select id="sim-top">
+            <option value="10">10</option>
+            <option value="25" selected>25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </label>
+        <label class="inline-field"><input type="checkbox" id="sim-same-pack" /> same packaging only</label>
+      </div>
+      <p id="sim-status" class="dash-status hidden"></p>
+      <div id="sim-result" class="hidden">
+        <div id="sim-headline" class="sim-headline"></div>
+        <div class="two-col sim-cols">
+          <div>
+            <h3 class="sub-title">Same SKU vs different SKU</h3>
+            <div id="sim-hist"></div>
+            <ul id="sim-notes" class="notes"></ul>
+          </div>
+          <div id="sim-kpis" class="mini-kpis"></div>
+        </div>
+        <h3 class="sub-title">Top pairs</h3>
+        <div id="sim-pairs" class="pairs"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">SKU list <span id="sku-count" class="pill"></span></h2>
+      <p class="card-sub">Click a row to see its gallery and eval images. Click a column header to sort.</p>
+      <div class="table-controls">
+        <input id="sku-search" class="catalog-search" type="search" placeholder="Search SKUs&hellip;" />
+        <div id="pack-chips" class="chips"></div>
+        <select id="flag-filter" class="select">
+          <option value="all">All SKUs</option>
+          <option value="single">Single image</option>
+          <option value="few">Fewer than 3 images</option>
+          <option value="no_eval">No eval crops</option>
+          <option value="confusable">Confusable (run similarity first)</option>
+          <option value="dup">Duplicate photo across SKUs</option>
+          <option value="leak">Eval = gallery copy</option>
+          <option value="tiny">Has tiny images</option>
+          <option value="empty">Empty folder</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table class="sku-table" id="sku-table">
+          <thead>
+            <tr>
+              <th data-sort="sku_id">SKU</th>
+              <th data-sort="packaging_type">Packaging</th>
+              <th data-sort="n_images">Gallery images</th>
+              <th data-sort="n_eval">Eval crops</th>
+              <th data-sort="nearest_sku">Nearest other SKU</th>
+              <th data-sort="nearest_sim">Similarity</th>
+              <th>Flags</th>
+            </tr>
+          </thead>
+          <tbody id="sku-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Data quality findings</h2>
+      <p class="card-sub">Byte-identical files and other things worth fixing by hand.</p>
+      <div id="quality"></div>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

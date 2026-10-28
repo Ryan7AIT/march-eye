@@ -1,0 +1,2592 @@
+{
+  "embedder": "dinov3",
+  "model": "runs/dinov3_ft",
+  "image_canvas": {
+    "width": 224,
+    "height": 640
+  },
+  "embedding_dim": 768,
+  "num_vectors": 430,
+  "entries": [
+    {
+      "id": 0,
+      "sku_id": "frutty_1l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_annans/0021_0.45.jpg"
+    },
+    {
+      "id": 1,
+      "sku_id": "frutty_1l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_annans/20261010_010405_8a9968_0013_0.55.jpg"
+    },
+    {
+      "id": 2,
+      "sku_id": "frutty_1l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_annans/234565432.png"
+    },
+    {
+      "id": 3,
+      "sku_id": "frutty_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_orange/20261010_010405_8a9968_0012_0.55.jpg"
+    },
+    {
+      "id": 4,
+      "sku_id": "frutty_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_orange/20261010_010405_8a9968_0015_0.52.jpg"
+    },
+    {
+      "id": 5,
+      "sku_id": "frutty_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_orange/23456789876.png"
+    },
+    {
+      "id": 6,
+      "sku_id": "frutty_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_orange/23456789876f555f.png"
+    },
+    {
+      "id": 7,
+      "sku_id": "frutty_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/frutty_1l_orange/345654323456787654.png"
+    },
+    {
+      "id": 8,
+      "sku_id": "ifruit_1l_annans_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_1l_annans_orange/20261010_005444_d93a22_0002_0.55.jpg"
+    },
+    {
+      "id": 9,
+      "sku_id": "ifruit_1l_mangue_pomme",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_1l_mangue_pomme/20261010_005444_d93a22_0004_0.54.jpg"
+    },
+    {
+      "id": 10,
+      "sku_id": "ifruit_1l_mangue_pomme",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_1l_mangue_pomme/8765456.png"
+    },
+    {
+      "id": 11,
+      "sku_id": "ifruit_1l_mangue_pomme",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_1l_mangue_pomme/987654.png"
+    },
+    {
+      "id": 12,
+      "sku_id": "ifruit_1l_orange_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_1l_orange_mangue/20261010_005444_d93a22_0001_0.59.jpg"
+    },
+    {
+      "id": 13,
+      "sku_id": "ifruit_1l_tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_1l_tchina/20261010_005444_d93a22_0005_0.52.jpg"
+    },
+    {
+      "id": 14,
+      "sku_id": "ifruit_2l_carrot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_2l_carrot/20261010_004545_b25d0b_0016_0.56.jpg"
+    },
+    {
+      "id": 15,
+      "sku_id": "ifruit_2l_citron",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ifruit_2l_citron/20261010_004545_b25d0b_0017_0.50.jpg"
+    },
+    {
+      "id": 16,
+      "sku_id": "ramy_125_coctail",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125_coctail/20261010_002423_76ab6a_0000_0.62.jpg"
+    },
+    {
+      "id": 17,
+      "sku_id": "ramy_125_coctail",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125_coctail/20261010_002423_76ab6a_0005_0.54.jpg"
+    },
+    {
+      "id": 18,
+      "sku_id": "ramy_125_coctail",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125_coctail/35-17.jpg"
+    },
+    {
+      "id": 19,
+      "sku_id": "ramy_125_coctail",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125_coctail/35-6.jpg"
+    },
+    {
+      "id": 20,
+      "sku_id": "ramy_125_coctail",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125_coctail/37-5.jpg"
+    },
+    {
+      "id": 21,
+      "sku_id": "ramy_125_coctail",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125_coctail/image.png"
+    },
+    {
+      "id": 22,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/0122_bottle_0.16.jpg"
+    },
+    {
+      "id": 23,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261010_011009_5d9781_0005_0.69.jpg"
+    },
+    {
+      "id": 24,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261010_011009_5d9781_0012_0.66.jpg"
+    },
+    {
+      "id": 25,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261010_011009_5d9781_0015_0.66.jpg"
+    },
+    {
+      "id": 26,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261016_174537_8c578a_0039_0.56.jpg"
+    },
+    {
+      "id": 27,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261017_203911_a65bff_0026_0.62.jpg"
+    },
+    {
+      "id": 28,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261019_221845_6ac8b3_0001_0.73.jpg"
+    },
+    {
+      "id": 29,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/20261019_221845_6ac8b3_0017_0.68.jpg"
+    },
+    {
+      "id": 30,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/23456543.png"
+    },
+    {
+      "id": 31,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/2345678uh.png"
+    },
+    {
+      "id": 32,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/38-7.jpg"
+    },
+    {
+      "id": 33,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/39-18.jpg"
+    },
+    {
+      "id": 34,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/39-7.jpg"
+    },
+    {
+      "id": 35,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/785.png"
+    },
+    {
+      "id": 36,
+      "sku_id": "ramy_125l_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_annans/lkjhgfre4567890.png"
+    },
+    {
+      "id": 37,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/0987634567890hgfd.png"
+    },
+    {
+      "id": 38,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/20261010_002423_76ab6a_0001_0.61.jpg"
+    },
+    {
+      "id": 39,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/20261010_003717_ab5340_0013_0.67.jpg"
+    },
+    {
+      "id": 40,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/20261010_003717_ab5340_0014_0.67.jpg"
+    },
+    {
+      "id": 41,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/20261010_004545_b25d0b_0004_0.65.jpg"
+    },
+    {
+      "id": 42,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/7654567.png"
+    },
+    {
+      "id": 43,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/98765445678.png"
+    },
+    {
+      "id": 44,
+      "sku_id": "ramy_125l_coctail_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_coctail_tropical/image.png"
+    },
+    {
+      "id": 45,
+      "sku_id": "ramy_125l_fraise_pomme_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_fraise_pomme_banane/36-21.jpg"
+    },
+    {
+      "id": 46,
+      "sku_id": "ramy_125l_fraise_pomme_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_fraise_pomme_banane/36-53.jpg"
+    },
+    {
+      "id": 47,
+      "sku_id": "ramy_125l_fraise_pomme_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_fraise_pomme_banane/37-17.jpg"
+    },
+    {
+      "id": 48,
+      "sku_id": "ramy_125l_fraise_pomme_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_fraise_pomme_banane/37-4.jpg"
+    },
+    {
+      "id": 49,
+      "sku_id": "ramy_125l_fraise_pomme_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_fraise_pomme_banane/54321.png"
+    },
+    {
+      "id": 50,
+      "sku_id": "ramy_125l_fraise_pomme_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_fraise_pomme_banane/image.png"
+    },
+    {
+      "id": 51,
+      "sku_id": "ramy_125l_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_mangue/20261010_004545_b25d0b_0007_0.64.jpg"
+    },
+    {
+      "id": 52,
+      "sku_id": "ramy_125l_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_mangue/20261011_233055_1c84f6_0019_0.71.jpg"
+    },
+    {
+      "id": 53,
+      "sku_id": "ramy_125l_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_mangue/35-22.jpg"
+    },
+    {
+      "id": 54,
+      "sku_id": "ramy_125l_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_mangue/874567890-.png"
+    },
+    {
+      "id": 55,
+      "sku_id": "ramy_125l_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_mangue/87657897965467.png"
+    },
+    {
+      "id": 56,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/20261012_204309_d4b49e_0019_0.67.jpg"
+    },
+    {
+      "id": 57,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/35-24.jpg"
+    },
+    {
+      "id": 58,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/35-29.jpg"
+    },
+    {
+      "id": 59,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/38-3.jpg"
+    },
+    {
+      "id": 60,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/39-3.jpg"
+    },
+    {
+      "id": 61,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/39-8.jpg"
+    },
+    {
+      "id": 62,
+      "sku_id": "ramy_125l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange/5432.png"
+    },
+    {
+      "id": 63,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/20261012_204309_d4b49e_0004_0.74.jpg"
+    },
+    {
+      "id": 64,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/20261012_204309_d4b49e_0008_0.74.jpg"
+    },
+    {
+      "id": 65,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/20261012_204309_d4b49e_0016_0.69.jpg"
+    },
+    {
+      "id": 66,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/20261012_204309_d4b49e_0017_0.68.jpg"
+    },
+    {
+      "id": 67,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/20261012_204309_d4b49e_0029_0.65.jpg"
+    },
+    {
+      "id": 68,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/20261013_132946_ae363c_0008_0.76.jpg"
+    },
+    {
+      "id": 69,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/234432.png"
+    },
+    {
+      "id": 70,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/321.png"
+    },
+    {
+      "id": 71,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/37-2.jpg"
+    },
+    {
+      "id": 72,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/38-13.jpg"
+    },
+    {
+      "id": 73,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/39-10.jpg"
+    },
+    {
+      "id": 74,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/39-5.jpg"
+    },
+    {
+      "id": 75,
+      "sku_id": "ramy_125l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_abricot/image.png"
+    },
+    {
+      "id": 76,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/20261010_003717_ab5340_0006_0.70.jpg"
+    },
+    {
+      "id": 77,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/20261011_233055_1c84f6_0022_0.71.jpg"
+    },
+    {
+      "id": 78,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/20261012_204309_d4b49e_0006_0.74.jpg"
+    },
+    {
+      "id": 79,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/20261012_204309_d4b49e_0052_0.56.jpg"
+    },
+    {
+      "id": 80,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/20261017_202118_03aee5_0048_0.64.jpg"
+    },
+    {
+      "id": 81,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/36-16.jpg"
+    },
+    {
+      "id": 82,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/36-6.jpg"
+    },
+    {
+      "id": 83,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/36-8.jpg"
+    },
+    {
+      "id": 84,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/36-9.jpg"
+    },
+    {
+      "id": 85,
+      "sku_id": "ramy_125l_orange_anans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_anans/image.png"
+    },
+    {
+      "id": 86,
+      "sku_id": "ramy_125l_orange_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_bannane/20261010_010405_8a9968_0009_0.57.jpg"
+    },
+    {
+      "id": 87,
+      "sku_id": "ramy_125l_orange_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_bannane/20261015_115255_1d3f88_0001_0.56.jpg"
+    },
+    {
+      "id": 88,
+      "sku_id": "ramy_125l_orange_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_bannane/39-14.jpg"
+    },
+    {
+      "id": 89,
+      "sku_id": "ramy_125l_orange_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_bannane/7896542585.png"
+    },
+    {
+      "id": 90,
+      "sku_id": "ramy_125l_orange_citron_carrot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_citron_carrot/20261010_010405_8a9968_0004_0.63.jpg"
+    },
+    {
+      "id": 91,
+      "sku_id": "ramy_125l_orange_citron_carrot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_citron_carrot/2345672.png"
+    },
+    {
+      "id": 92,
+      "sku_id": "ramy_125l_orange_citron_carrot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_citron_carrot/765456345.png"
+    },
+    {
+      "id": 93,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/20261010_002423_76ab6a_0002_0.60.jpg"
+    },
+    {
+      "id": 94,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/20261012_204309_d4b49e_0053_0.56.jpg"
+    },
+    {
+      "id": 95,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/20261012_204309_d4b49e_0057_0.54.jpg"
+    },
+    {
+      "id": 96,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/20261012_204309_d4b49e_0067_0.50.jpg"
+    },
+    {
+      "id": 97,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/20261016_174537_8c578a_0043_0.48.jpg"
+    },
+    {
+      "id": 98,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/987654323456789.png"
+    },
+    {
+      "id": 99,
+      "sku_id": "ramy_125l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_mandarin/image.png"
+    },
+    {
+      "id": 100,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/20261012_204309_d4b49e_0023_0.67.jpg"
+    },
+    {
+      "id": 101,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/20261015_115255_1d3f88_0004_0.54.jpg"
+    },
+    {
+      "id": 102,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/20261015_115255_1d3f88_0005_0.51.jpg"
+    },
+    {
+      "id": 103,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/20261015_120057_8b7c39_0017_0.49.jpg"
+    },
+    {
+      "id": 104,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/20261015_183410_02073b_0003_0.80.jpg"
+    },
+    {
+      "id": 105,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/38-5.jpg"
+    },
+    {
+      "id": 106,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/39-2.jpg"
+    },
+    {
+      "id": 107,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/39-6.jpg"
+    },
+    {
+      "id": 108,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/98765.png"
+    },
+    {
+      "id": 109,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/image.png"
+    },
+    {
+      "id": 110,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/image2.png"
+    },
+    {
+      "id": 111,
+      "sku_id": "ramy_125l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche/Screenshot 2026-07-19 185547.png"
+    },
+    {
+      "id": 112,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/20261010_002423_76ab6a_0004_0.55.jpg"
+    },
+    {
+      "id": 113,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/20261010_005444_d93a22_0000_0.64.jpg"
+    },
+    {
+      "id": 114,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/234567.png"
+    },
+    {
+      "id": 115,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/36-14.jpg"
+    },
+    {
+      "id": 116,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/36-18.jpg"
+    },
+    {
+      "id": 117,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/36-29.jpg"
+    },
+    {
+      "id": 118,
+      "sku_id": "ramy_125l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_orange_peche_fraise/image.png"
+    },
+    {
+      "id": 119,
+      "sku_id": "ramy_125l_pasteque_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_pasteque_fraise/20261015_120057_8b7c39_0000_0.73.jpg"
+    },
+    {
+      "id": 120,
+      "sku_id": "ramy_125l_pasteque_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_pasteque_fraise/20261015_183410_02073b_0021_0.51.jpg"
+    },
+    {
+      "id": 121,
+      "sku_id": "ramy_125l_pasteque_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_pasteque_fraise/876543456.png"
+    },
+    {
+      "id": 122,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/20261010_011009_5d9781_0011_0.67.jpg"
+    },
+    {
+      "id": 123,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/20261010_011009_5d9781_0022_0.65.jpg"
+    },
+    {
+      "id": 124,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/20261019_221845_6ac8b3_0009_0.70.jpg"
+    },
+    {
+      "id": 125,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/35-10.jpg"
+    },
+    {
+      "id": 126,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/35-28.jpg"
+    },
+    {
+      "id": 127,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/35-3.jpg"
+    },
+    {
+      "id": 128,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/35-5.jpg"
+    },
+    {
+      "id": 129,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/image.png"
+    },
+    {
+      "id": 130,
+      "sku_id": "ramy_125l_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche/Screenshot 2026-07-19 185455.png"
+    },
+    {
+      "id": 131,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/0068_bottle_0.69.jpg"
+    },
+    {
+      "id": 132,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/20261012_204309_d4b49e_0034_0.64.jpg"
+    },
+    {
+      "id": 133,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/20261016_174537_8c578a_0026_0.62.jpg"
+    },
+    {
+      "id": 134,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/35-13.jpg"
+    },
+    {
+      "id": 135,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/35-18.jpg"
+    },
+    {
+      "id": 136,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/35-4.jpg"
+    },
+    {
+      "id": 137,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/987654567.png"
+    },
+    {
+      "id": 138,
+      "sku_id": "ramy_125l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_peche_abricot/re.png"
+    },
+    {
+      "id": 139,
+      "sku_id": "ramy_125l_pomme_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_pomme_bannane/098765445678.png"
+    },
+    {
+      "id": 140,
+      "sku_id": "ramy_125l_pomme_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_pomme_bannane/20261010_004545_b25d0b_0003_0.67.jpg"
+    },
+    {
+      "id": 141,
+      "sku_id": "ramy_125l_pomme_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_125l_pomme_bannane/7655678.png"
+    },
+    {
+      "id": 142,
+      "sku_id": "ramy_1l_milky_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_abricot/37-7.jpg"
+    },
+    {
+      "id": 143,
+      "sku_id": "ramy_1l_milky_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_abricot/Screenshot 2026-07-19 185629.png"
+    },
+    {
+      "id": 144,
+      "sku_id": "ramy_1l_milky_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_abricot/Screenshot 2026-07-19 185651.png"
+    },
+    {
+      "id": 145,
+      "sku_id": "ramy_1l_milky_fraise_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_bannane/20261010_000018_e40e86_0006_0.81.jpg"
+    },
+    {
+      "id": 146,
+      "sku_id": "ramy_1l_milky_fraise_fransboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_fransboise/098765434567.png"
+    },
+    {
+      "id": 147,
+      "sku_id": "ramy_1l_milky_fraise_fransboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_fransboise/23456.png"
+    },
+    {
+      "id": 148,
+      "sku_id": "ramy_1l_milky_fraise_fransboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_fransboise/234567.png"
+    },
+    {
+      "id": 149,
+      "sku_id": "ramy_1l_milky_fraise_fransboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_fransboise/38-22.jpg"
+    },
+    {
+      "id": 150,
+      "sku_id": "ramy_1l_milky_fraise_fransboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_fransboise/38-27.jpg"
+    },
+    {
+      "id": 151,
+      "sku_id": "ramy_1l_milky_fraise_fransboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_fraise_fransboise/987654.png"
+    },
+    {
+      "id": 152,
+      "sku_id": "ramy_1l_milky_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_mangue/20261010_011009_5d9781_0017_0.66.jpg"
+    },
+    {
+      "id": 153,
+      "sku_id": "ramy_1l_milky_mangue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_mangue/20261010_011009_5d9781_0021_0.65.jpg"
+    },
+    {
+      "id": 154,
+      "sku_id": "ramy_1l_milky_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche/20261010_011009_5d9781_0010_0.67.jpg"
+    },
+    {
+      "id": 155,
+      "sku_id": "ramy_1l_milky_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche/37-10.jpg"
+    },
+    {
+      "id": 156,
+      "sku_id": "ramy_1l_milky_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche/765678.png"
+    },
+    {
+      "id": 157,
+      "sku_id": "ramy_1l_milky_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche/876543456.png"
+    },
+    {
+      "id": 158,
+      "sku_id": "ramy_1l_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche_abricot/01.png"
+    },
+    {
+      "id": 159,
+      "sku_id": "ramy_1l_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche_abricot/20261010_003717_ab5340_0007_0.69.jpg"
+    },
+    {
+      "id": 160,
+      "sku_id": "ramy_1l_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche_abricot/20261010_003717_ab5340_0017_0.64.jpg"
+    },
+    {
+      "id": 161,
+      "sku_id": "ramy_1l_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche_abricot/20261010_003717_ab5340_0023_0.62.jpg"
+    },
+    {
+      "id": 162,
+      "sku_id": "ramy_1l_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche_abricot/20261010_011009_5d9781_0003_0.70.jpg"
+    },
+    {
+      "id": 163,
+      "sku_id": "ramy_1l_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_peche_abricot/76543223456.png"
+    },
+    {
+      "id": 164,
+      "sku_id": "ramy_1l_milky_pomme_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1l_milky_pomme_bannane/38-6.jpg"
+    },
+    {
+      "id": 165,
+      "sku_id": "ramy_1ml_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1ml_milky_fraise/20261017_203911_a65bff_0028_0.60.jpg"
+    },
+    {
+      "id": 166,
+      "sku_id": "ramy_1ml_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_1ml_milky_fraise/20261017_203911_a65bff_0033_0.58.jpg"
+    },
+    {
+      "id": 167,
+      "sku_id": "ramy_25cl_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_25cl_annans/image.png"
+    },
+    {
+      "id": 168,
+      "sku_id": "ramy_25cl_bitter",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_25cl_bitter/image.png"
+    },
+    {
+      "id": 169,
+      "sku_id": "ramy_25cl_grandin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_25cl_grandin/1-27.jpg"
+    },
+    {
+      "id": 170,
+      "sku_id": "ramy_25cl_miel",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_25cl_miel/1-33.jpg"
+    },
+    {
+      "id": 171,
+      "sku_id": "ramy_2l_agrumes",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_agrumes/20261016_174537_8c578a_0002_0.77.jpg"
+    },
+    {
+      "id": 172,
+      "sku_id": "ramy_2l_agrumes",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_agrumes/20261016_174537_8c578a_0009_0.73.jpg"
+    },
+    {
+      "id": 173,
+      "sku_id": "ramy_2l_agrumes",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_agrumes/20261016_174537_8c578a_0024_0.67.jpg"
+    },
+    {
+      "id": 174,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/20261010_010405_8a9968_0014_0.52.jpg"
+    },
+    {
+      "id": 175,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/20261012_204309_d4b49e_0015_0.69.jpg"
+    },
+    {
+      "id": 176,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/20261012_204309_d4b49e_0049_0.58.jpg"
+    },
+    {
+      "id": 177,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/20261017_203911_a65bff_0011_0.68.jpg"
+    },
+    {
+      "id": 178,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/2345676543.png"
+    },
+    {
+      "id": 179,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/38-17.jpg"
+    },
+    {
+      "id": 180,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/38-19.jpg"
+    },
+    {
+      "id": 181,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/65.png"
+    },
+    {
+      "id": 182,
+      "sku_id": "ramy_2l_annanas",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_annanas/image.png"
+    },
+    {
+      "id": 183,
+      "sku_id": "ramy_2l_menth",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_menth/Screenshot 2026-09-24 230715.png"
+    },
+    {
+      "id": 184,
+      "sku_id": "ramy_2l_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_milky_fraise/20261017_155005_e22580_0006_0.64.jpg"
+    },
+    {
+      "id": 185,
+      "sku_id": "ramy_2l_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_milky_fraise/20261017_155005_e22580_0024_0.53.jpg"
+    },
+    {
+      "id": 186,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/19-32.jpg"
+    },
+    {
+      "id": 187,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/20261010_000018_e40e86_0009_0.80.jpg"
+    },
+    {
+      "id": 188,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/20261012_204309_d4b49e_0070_0.49.jpg"
+    },
+    {
+      "id": 189,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/20261015_115255_1d3f88_0008_0.49.jpg"
+    },
+    {
+      "id": 190,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/4848448968.png"
+    },
+    {
+      "id": 191,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/9876543456.png"
+    },
+    {
+      "id": 192,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange/kuyt567iop2d.png"
+    },
+    {
+      "id": 193,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/10-47.jpg"
+    },
+    {
+      "id": 194,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/20261010_000018_e40e86_0001_0.85.jpg"
+    },
+    {
+      "id": 195,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/20261012_204309_d4b49e_0007_0.74.jpg"
+    },
+    {
+      "id": 196,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/234321234.png"
+    },
+    {
+      "id": 197,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/234554323455.png"
+    },
+    {
+      "id": 198,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/37-3.jpg"
+    },
+    {
+      "id": 199,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/98765456.png"
+    },
+    {
+      "id": 200,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_abricot/image.png"
+    },
+    {
+      "id": 201,
+      "sku_id": "ramy_2l_orange_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_annans/20261012_204309_d4b49e_0028_0.65.jpg"
+    },
+    {
+      "id": 202,
+      "sku_id": "ramy_2l_orange_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_annans/20261015_120057_8b7c39_0002_0.69.jpg"
+    },
+    {
+      "id": 203,
+      "sku_id": "ramy_2l_orange_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_annans/2345676543.png"
+    },
+    {
+      "id": 204,
+      "sku_id": "ramy_2l_orange_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_annans/876.png"
+    },
+    {
+      "id": 205,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/098765423456e.png"
+    },
+    {
+      "id": 206,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/10-42.jpg"
+    },
+    {
+      "id": 207,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/20261010_010405_8a9968_0010_0.57.jpg"
+    },
+    {
+      "id": 208,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/20261010_010405_8a9968_0017_0.49.jpg"
+    },
+    {
+      "id": 209,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/36-26.jpg"
+    },
+    {
+      "id": 210,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/36-38.jpg"
+    },
+    {
+      "id": 211,
+      "sku_id": "ramy_2l_orange_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_banane/36-66.jpg"
+    },
+    {
+      "id": 212,
+      "sku_id": "ramy_2l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_mandarin/20261012_204309_d4b49e_0078_0.45.jpg"
+    },
+    {
+      "id": 213,
+      "sku_id": "ramy_2l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_mandarin/7852509876.png"
+    },
+    {
+      "id": 214,
+      "sku_id": "ramy_2l_orange_mandarin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_mandarin/9876567.png"
+    },
+    {
+      "id": 215,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/20261010_000018_e40e86_0002_0.84.jpg"
+    },
+    {
+      "id": 216,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/20261010_000018_e40e86_0008_0.81.jpg"
+    },
+    {
+      "id": 217,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/20261011_233055_1c84f6_0014_0.73.jpg"
+    },
+    {
+      "id": 218,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/20261015_115255_1d3f88_0010_0.46.jpg"
+    },
+    {
+      "id": 219,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/20261019_221845_6ac8b3_0037_0.64.jpg"
+    },
+    {
+      "id": 220,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/37-26.jpg"
+    },
+    {
+      "id": 221,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/37-9.jpg"
+    },
+    {
+      "id": 222,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/876543456789.png"
+    },
+    {
+      "id": 223,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/8765434567891.png"
+    },
+    {
+      "id": 224,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/918276445678.png"
+    },
+    {
+      "id": 225,
+      "sku_id": "ramy_2l_orange_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche/image.png"
+    },
+    {
+      "id": 226,
+      "sku_id": "ramy_2l_orange_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_orange_peche_fraise/20261016_174537_8c578a_0008_0.73.jpg"
+    },
+    {
+      "id": 227,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/20261012_204309_d4b49e_0040_0.61.jpg"
+    },
+    {
+      "id": 228,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/20261012_204309_d4b49e_0044_0.60.jpg"
+    },
+    {
+      "id": 229,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/20261015_120057_8b7c39_0005_0.65.jpg"
+    },
+    {
+      "id": 230,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/20261015_120057_8b7c39_0013_0.56.jpg"
+    },
+    {
+      "id": 231,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/35-14.jpg"
+    },
+    {
+      "id": 232,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/35-16.jpg"
+    },
+    {
+      "id": 233,
+      "sku_id": "ramy_2l_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_abricot/987654456.png"
+    },
+    {
+      "id": 234,
+      "sku_id": "ramy_2l_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_fraise/0165_carton_0.06.jpg"
+    },
+    {
+      "id": 235,
+      "sku_id": "ramy_2l_peche_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_2l_peche_fraise/10-45.jpg"
+    },
+    {
+      "id": 236,
+      "sku_id": "ramy_300ml_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_abricot/0084_bottle_0.35.jpg"
+    },
+    {
+      "id": 237,
+      "sku_id": "ramy_300ml_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_annans/0080_bottle_0.64.jpg"
+    },
+    {
+      "id": 238,
+      "sku_id": "ramy_300ml_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_annans/0103_bottle_0.27.jpg"
+    },
+    {
+      "id": 239,
+      "sku_id": "ramy_300ml_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_annans/Screenshot 2026-07-19 190052.png"
+    },
+    {
+      "id": 240,
+      "sku_id": "ramy_300ml_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_annans/Screenshot 2026-07-19 190106.png"
+    },
+    {
+      "id": 241,
+      "sku_id": "ramy_300ml_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_annans/Screenshot 2026-07-19 190121.png"
+    },
+    {
+      "id": 242,
+      "sku_id": "ramy_300ml_annas_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_annas_orange/image.png"
+    },
+    {
+      "id": 243,
+      "sku_id": "ramy_300ml_coctain_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_coctain_tropical/0006_0.62.jpg"
+    },
+    {
+      "id": 244,
+      "sku_id": "ramy_300ml_coctain_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_coctain_tropical/0025_0.52.jpg"
+    },
+    {
+      "id": 245,
+      "sku_id": "ramy_300ml_coctain_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_coctain_tropical/0030_0.47.jpg"
+    },
+    {
+      "id": 246,
+      "sku_id": "ramy_300ml_coctain_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_coctain_tropical/5432.png"
+    },
+    {
+      "id": 247,
+      "sku_id": "ramy_300ml_coctain_tropical",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_coctain_tropical/image.png"
+    },
+    {
+      "id": 248,
+      "sku_id": "ramy_300ml_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_fraise/image.png"
+    },
+    {
+      "id": 249,
+      "sku_id": "ramy_300ml_mango",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_mango/image.png"
+    },
+    {
+      "id": 250,
+      "sku_id": "ramy_300ml_milky_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_abricot/image.png"
+    },
+    {
+      "id": 251,
+      "sku_id": "ramy_300ml_milky_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_abricot/Screenshot 2026-07-19 185824.png"
+    },
+    {
+      "id": 252,
+      "sku_id": "ramy_300ml_milky_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_annans/20261011_231309_f2f9fc_0031_0.47.jpg"
+    },
+    {
+      "id": 253,
+      "sku_id": "ramy_300ml_milky_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_annans/38.jpg"
+    },
+    {
+      "id": 254,
+      "sku_id": "ramy_300ml_milky_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_annans/87654567.png"
+    },
+    {
+      "id": 255,
+      "sku_id": "ramy_300ml_milky_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_annans/987654.png"
+    },
+    {
+      "id": 256,
+      "sku_id": "ramy_300ml_milky_annans",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_annans/rew.png"
+    },
+    {
+      "id": 257,
+      "sku_id": "ramy_300ml_milky_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_banane/38-2.jpg"
+    },
+    {
+      "id": 258,
+      "sku_id": "ramy_300ml_milky_banane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_banane/Screenshot 2026-07-19 185849.png"
+    },
+    {
+      "id": 259,
+      "sku_id": "ramy_300ml_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise/01.jpg"
+    },
+    {
+      "id": 260,
+      "sku_id": "ramy_300ml_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise/8765433456.png"
+    },
+    {
+      "id": 261,
+      "sku_id": "ramy_300ml_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise/987654.png"
+    },
+    {
+      "id": 262,
+      "sku_id": "ramy_300ml_milky_fraise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise/Screenshot 2026-07-19 185904.png"
+    },
+    {
+      "id": 263,
+      "sku_id": "ramy_300ml_milky_fraise_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_bannane/0987654.png"
+    },
+    {
+      "id": 264,
+      "sku_id": "ramy_300ml_milky_fraise_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_bannane/20261017_155005_e22580_0012_0.61.jpg"
+    },
+    {
+      "id": 265,
+      "sku_id": "ramy_300ml_milky_fraise_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_bannane/38-28.jpg"
+    },
+    {
+      "id": 266,
+      "sku_id": "ramy_300ml_milky_fraise_franboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_franboise/0248_carton_0.01.jpg"
+    },
+    {
+      "id": 267,
+      "sku_id": "ramy_300ml_milky_fraise_franboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_franboise/20261017_203911_a65bff_0030_0.59.jpg"
+    },
+    {
+      "id": 268,
+      "sku_id": "ramy_300ml_milky_fraise_franboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_franboise/image.png"
+    },
+    {
+      "id": 269,
+      "sku_id": "ramy_300ml_milky_fraise_franboise",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_fraise_franboise/Screenshot 2026-07-19 185810.png"
+    },
+    {
+      "id": 270,
+      "sku_id": "ramy_300ml_milky_grandine",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_grandine/38-15.jpg"
+    },
+    {
+      "id": 271,
+      "sku_id": "ramy_300ml_milky_grandine",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_grandine/38-21.jpg"
+    },
+    {
+      "id": 272,
+      "sku_id": "ramy_300ml_milky_grandine",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_grandine/5432.png"
+    },
+    {
+      "id": 273,
+      "sku_id": "ramy_300ml_milky_mango",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_mango/image.png"
+    },
+    {
+      "id": 274,
+      "sku_id": "ramy_300ml_milky_mango",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_mango/Screenshot 2026-07-19 185835.png"
+    },
+    {
+      "id": 275,
+      "sku_id": "ramy_300ml_milky_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_peche/image.png"
+    },
+    {
+      "id": 276,
+      "sku_id": "ramy_300ml_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_peche_abricot/098765.png"
+    },
+    {
+      "id": 277,
+      "sku_id": "ramy_300ml_milky_peche_abricot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_peche_abricot/0987654.png"
+    },
+    {
+      "id": 278,
+      "sku_id": "ramy_300ml_milky_pomme_bannane",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_milky_pomme_bannane/image.png"
+    },
+    {
+      "id": 279,
+      "sku_id": "ramy_300ml_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_orange/0084_bottle_0.62.jpg"
+    },
+    {
+      "id": 280,
+      "sku_id": "ramy_300ml_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_orange/nice_pic-7.jpg"
+    },
+    {
+      "id": 281,
+      "sku_id": "ramy_300ml_orange_carrot",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_orange_carrot/image.png"
+    },
+    {
+      "id": 282,
+      "sku_id": "ramy_300ml_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_peche/0105_bottle_0.24.jpg"
+    },
+    {
+      "id": 283,
+      "sku_id": "ramy_300ml_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_peche/1-18.jpg"
+    },
+    {
+      "id": 284,
+      "sku_id": "ramy_300ml_peche",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_peche/Screenshot 2026-07-19 190137.png"
+    },
+    {
+      "id": 285,
+      "sku_id": "ramy_300ml_risin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_risin/0064_bottle_0.53.jpg"
+    },
+    {
+      "id": 286,
+      "sku_id": "ramy_300ml_risin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_risin/Screenshot 2026-07-19 190025.png"
+    },
+    {
+      "id": 287,
+      "sku_id": "ramy_300ml_risin",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/ramy_300ml_risin/Screenshot 2026-07-19 190043.png"
+    },
+    {
+      "id": 288,
+      "sku_id": "rouiba_1l_nectar_mongue",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/rouiba_1l_nectar_mongue/20261013_231319_69e74e_0025_0.47.jpg"
+    },
+    {
+      "id": 289,
+      "sku_id": "rouiba_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/rouiba_1l_orange/20261013_231319_69e74e_0002_0.67.jpg"
+    },
+    {
+      "id": 290,
+      "sku_id": "rouiba_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/rouiba_1l_orange/20261013_231319_69e74e_0005_0.66.jpg"
+    },
+    {
+      "id": 291,
+      "sku_id": "rouiba_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/rouiba_1l_orange/20261013_231319_69e74e_0012_0.64.jpg"
+    },
+    {
+      "id": 292,
+      "sku_id": "rouiba_1l_orange",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/rouiba_1l_orange/20261013_231319_69e74e_0016_0.62.jpg"
+    },
+    {
+      "id": 293,
+      "sku_id": "shweps_300ml",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/shweps_300ml/1-36.jpg"
+    },
+    {
+      "id": 294,
+      "sku_id": "shweps_300ml",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/shweps_300ml/1-37.jpg"
+    },
+    {
+      "id": 295,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0001_bottle_1.00.jpg"
+    },
+    {
+      "id": 296,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0080_bottle_0.38.jpg"
+    },
+    {
+      "id": 297,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0091_bottle_0.60.jpg"
+    },
+    {
+      "id": 298,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0096_bottle_0.29.jpg"
+    },
+    {
+      "id": 299,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0141_carton_0.10.jpg"
+    },
+    {
+      "id": 300,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0145_carton_0.08.jpg"
+    },
+    {
+      "id": 301,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0159_carton_0.24.jpg"
+    },
+    {
+      "id": 302,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0176_carton_0.04.jpg"
+    },
+    {
+      "id": 303,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0234_carton_0.02.jpg"
+    },
+    {
+      "id": 304,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/0245_carton_0.01.jpg"
+    },
+    {
+      "id": 305,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/Screenshot 2026-07-20 153304.png"
+    },
+    {
+      "id": 306,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/Screenshot 2026-07-20 153312.png"
+    },
+    {
+      "id": 307,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/Screenshot 2026-07-20 153331.png"
+    },
+    {
+      "id": 308,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/Screenshot 2026-07-20 153338.png"
+    },
+    {
+      "id": 309,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/Screenshot 2026-07-20 153346.png"
+    },
+    {
+      "id": 310,
+      "sku_id": "tchina",
+      "packaging_type": "bottle",
+      "image_path": "data/single_products/bottle/tchina/Screenshot 2026-07-20 153353.png"
+    },
+    {
+      "id": 311,
+      "sku_id": "ramy_cocktail_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_300ml/20261013_230417_129ea8_0002_0.65.jpg"
+    },
+    {
+      "id": 312,
+      "sku_id": "ramy_cocktail_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_300ml/20261013_231627_54f075_0002_0.59.jpg"
+    },
+    {
+      "id": 313,
+      "sku_id": "ramy_cocktail_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_300ml/20261013_231627_54f075_0006_0.49.jpg"
+    },
+    {
+      "id": 314,
+      "sku_id": "ramy_cocktail_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_300ml/20261013_231627_54f075_0009_0.45.jpg"
+    },
+    {
+      "id": 315,
+      "sku_id": "ramy_cocktail_milky_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_milky_300ml/1-29.jpg"
+    },
+    {
+      "id": 316,
+      "sku_id": "ramy_cocktail_milky_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_milky_300ml/3456.png"
+    },
+    {
+      "id": 317,
+      "sku_id": "ramy_cocktail_tropical_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_cocktail_tropical_300ml/image.png"
+    },
+    {
+      "id": 318,
+      "sku_id": "ramy_franbois_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_franbois_300ml/38-18.jpg"
+    },
+    {
+      "id": 319,
+      "sku_id": "ramy_franbois_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_franbois_300ml/38-25.jpg"
+    },
+    {
+      "id": 320,
+      "sku_id": "ramy_franbois_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_franbois_300ml/image.png"
+    },
+    {
+      "id": 321,
+      "sku_id": "ramy_mongo_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_mongo_300ml/1-13.jpg"
+    },
+    {
+      "id": 322,
+      "sku_id": "ramy_orange_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_orange_300ml/1-3.jpg"
+    },
+    {
+      "id": 323,
+      "sku_id": "ramy_orange_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_orange_300ml/image.png"
+    },
+    {
+      "id": 324,
+      "sku_id": "ramy_pomme_banan_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_pomme_banan_300ml/20261017_203911_a65bff_0036_0.53.jpg"
+    },
+    {
+      "id": 325,
+      "sku_id": "ramy_pomme_banan_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_pomme_banan_300ml/38-20.jpg"
+    },
+    {
+      "id": 326,
+      "sku_id": "ramy_pomme_banan_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_pomme_banan_300ml/74128.png"
+    },
+    {
+      "id": 327,
+      "sku_id": "ramy_pomme_banan_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_pomme_banan_300ml/789641.png"
+    },
+    {
+      "id": 328,
+      "sku_id": "ramy_pomme_banan_300ml",
+      "packaging_type": "can",
+      "image_path": "data/single_products/can/ramy_pomme_banan_300ml/78965r45.png"
+    },
+    {
+      "id": 329,
+      "sku_id": "ramy_1l_annans",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_annans/34-23.jpg"
+    },
+    {
+      "id": 330,
+      "sku_id": "ramy_1l_annans",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_annans/5655656g5.png"
+    },
+    {
+      "id": 331,
+      "sku_id": "ramy_1l_annans",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_annans/987654.png"
+    },
+    {
+      "id": 332,
+      "sku_id": "ramy_1l_citron",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_citron/20261010_011009_5d9781_0043_0.56.jpg"
+    },
+    {
+      "id": 333,
+      "sku_id": "ramy_1l_citron",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_citron/20261011_233055_1c84f6_0030_0.68.jpg"
+    },
+    {
+      "id": 334,
+      "sku_id": "ramy_1l_citron",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_citron/23456.png"
+    },
+    {
+      "id": 335,
+      "sku_id": "ramy_1l_coctail",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_coctail/20261012_215115_ff6e00_0006_0.68.jpg"
+    },
+    {
+      "id": 336,
+      "sku_id": "ramy_1l_coctail",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_coctail/876.png"
+    },
+    {
+      "id": 337,
+      "sku_id": "ramy_1l_coctail_exotique",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_coctail_exotique/20261017_155005_e22580_0029_0.51.jpg"
+    },
+    {
+      "id": 338,
+      "sku_id": "ramy_1l_coctail_exotique",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_coctail_exotique/20261017_202118_03aee5_0065_0.61.jpg"
+    },
+    {
+      "id": 339,
+      "sku_id": "ramy_1l_coctail_exotique",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_coctail_exotique/234567.png"
+    },
+    {
+      "id": 340,
+      "sku_id": "ramy_1l_coctail_exotique",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_coctail_exotique/image.png"
+    },
+    {
+      "id": 341,
+      "sku_id": "ramy_1l_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_fraise/20261019_192835_025353_0003_0.67.jpg"
+    },
+    {
+      "id": 342,
+      "sku_id": "ramy_1l_fraise_framboise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_fraise_framboise/0987654.png"
+    },
+    {
+      "id": 343,
+      "sku_id": "ramy_1l_fraise_framboise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_fraise_framboise/20261017_201828_688888_0031_0.68.jpg"
+    },
+    {
+      "id": 344,
+      "sku_id": "ramy_1l_fraise_framboise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_fraise_framboise/2345678.png"
+    },
+    {
+      "id": 345,
+      "sku_id": "ramy_1l_fraise_framboise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_fraise_framboise/5432345.png"
+    },
+    {
+      "id": 346,
+      "sku_id": "ramy_1l_mango",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_mango/0004_carton_0.99.jpg"
+    },
+    {
+      "id": 347,
+      "sku_id": "ramy_1l_mango",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_mango/34-13.jpg"
+    },
+    {
+      "id": 348,
+      "sku_id": "ramy_1l_mango",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_mango/987654.png"
+    },
+    {
+      "id": 349,
+      "sku_id": "ramy_1l_mango",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_mango/image.png"
+    },
+    {
+      "id": 350,
+      "sku_id": "ramy_1l_mango",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_mango/we32.png"
+    },
+    {
+      "id": 351,
+      "sku_id": "ramy_1l_milky_granadin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_milky_granadin/20261013_132946_ae363c_0040_0.66.jpg"
+    },
+    {
+      "id": 352,
+      "sku_id": "ramy_1l_milky_granadin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_milky_granadin/87654345678.png"
+    },
+    {
+      "id": 353,
+      "sku_id": "ramy_1l_orange",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange/20261017_201203_dd7575_0001_0.69.jpg"
+    },
+    {
+      "id": 354,
+      "sku_id": "ramy_1l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_abricot/20261010_003717_ab5340_0034_0.58.jpg"
+    },
+    {
+      "id": 355,
+      "sku_id": "ramy_1l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_abricot/20261011_233055_1c84f6_0067_0.56.jpg"
+    },
+    {
+      "id": 356,
+      "sku_id": "ramy_1l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_abricot/2345678.png"
+    },
+    {
+      "id": 357,
+      "sku_id": "ramy_1l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_abricot/987654.png"
+    },
+    {
+      "id": 358,
+      "sku_id": "ramy_1l_orange_banane",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_banane/245678.png"
+    },
+    {
+      "id": 359,
+      "sku_id": "ramy_1l_orange_banane",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_banane/456789876.png"
+    },
+    {
+      "id": 360,
+      "sku_id": "ramy_1l_orange_banane",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_banane/876543.png"
+    },
+    {
+      "id": 361,
+      "sku_id": "ramy_1l_orange_mandarin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_mandarin/0070_carton_0.45.jpg"
+    },
+    {
+      "id": 362,
+      "sku_id": "ramy_1l_orange_mandarin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_mandarin/20261011_233055_1c84f6_0052_0.63.jpg"
+    },
+    {
+      "id": 363,
+      "sku_id": "ramy_1l_orange_mandarin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_mandarin/345678.png"
+    },
+    {
+      "id": 364,
+      "sku_id": "ramy_1l_orange_mandarin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_mandarin/38-10.jpg"
+    },
+    {
+      "id": 365,
+      "sku_id": "ramy_1l_orange_peche",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche/20261010_011009_5d9781_0002_0.70.jpg"
+    },
+    {
+      "id": 366,
+      "sku_id": "ramy_1l_orange_peche",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche/20261010_011009_5d9781_0006_0.68.jpg"
+    },
+    {
+      "id": 367,
+      "sku_id": "ramy_1l_orange_peche",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche/20261010_011009_5d9781_0008_0.67.jpg"
+    },
+    {
+      "id": 368,
+      "sku_id": "ramy_1l_orange_peche",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche/20261011_233055_1c84f6_0029_0.69.jpg"
+    },
+    {
+      "id": 369,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/23456.png"
+    },
+    {
+      "id": 370,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/245676.png"
+    },
+    {
+      "id": 371,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/36-24.jpg"
+    },
+    {
+      "id": 372,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/36-36.jpg"
+    },
+    {
+      "id": 373,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/36-5.jpg"
+    },
+    {
+      "id": 374,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/36-57.jpg"
+    },
+    {
+      "id": 375,
+      "sku_id": "ramy_1l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_orange_peche_fraise/36-7.jpg"
+    },
+    {
+      "id": 376,
+      "sku_id": "ramy_1l_peche_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_peche_abricot/20261010_011009_5d9781_0031_0.61.jpg"
+    },
+    {
+      "id": 377,
+      "sku_id": "ramy_1l_peche_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_peche_abricot/image.png"
+    },
+    {
+      "id": 378,
+      "sku_id": "ramy_1l_raisin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_raisin/36-46.jpg"
+    },
+    {
+      "id": 379,
+      "sku_id": "ramy_1l_raisin",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_1l_raisin/36-61.jpg"
+    },
+    {
+      "id": 380,
+      "sku_id": "ramy_20cl_mangue",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_20cl_mangue/20261010_011009_5d9781_0045_0.54.jpg"
+    },
+    {
+      "id": 381,
+      "sku_id": "ramy_20cl_mangue",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_20cl_mangue/20261010_011009_5d9781_0050_0.53.jpg"
+    },
+    {
+      "id": 382,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange/20261012_215115_ff6e00_0013_0.62.jpg"
+    },
+    {
+      "id": 383,
+      "sku_id": "ramy_2l_orange",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange/20261012_215115_ff6e00_0027_0.52.jpg"
+    },
+    {
+      "id": 384,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_abricot/20261012_215115_ff6e00_0008_0.65.jpg"
+    },
+    {
+      "id": 385,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_abricot/20261012_215115_ff6e00_0009_0.64.jpg"
+    },
+    {
+      "id": 386,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_abricot/20261012_215115_ff6e00_0010_0.63.jpg"
+    },
+    {
+      "id": 387,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_abricot/20261012_215115_ff6e00_0015_0.60.jpg"
+    },
+    {
+      "id": 388,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_abricot/20261012_215115_ff6e00_0023_0.58.jpg"
+    },
+    {
+      "id": 389,
+      "sku_id": "ramy_2l_orange_abricot",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_abricot/20261012_215115_ff6e00_0026_0.56.jpg"
+    },
+    {
+      "id": 390,
+      "sku_id": "ramy_2l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_peche_fraise/20261012_215115_ff6e00_0012_0.62.jpg"
+    },
+    {
+      "id": 391,
+      "sku_id": "ramy_2l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_peche_fraise/36-30.jpg"
+    },
+    {
+      "id": 392,
+      "sku_id": "ramy_2l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_peche_fraise/36-45.jpg"
+    },
+    {
+      "id": 393,
+      "sku_id": "ramy_2l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_peche_fraise/36-56.jpg"
+    },
+    {
+      "id": 394,
+      "sku_id": "ramy_2l_orange_peche_fraise",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_2l_orange_peche_fraise/image.png"
+    },
+    {
+      "id": 395,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/20261011_233055_1c84f6_0000_0.80.jpg"
+    },
+    {
+      "id": 396,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/image.png"
+    },
+    {
+      "id": 397,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152656.png"
+    },
+    {
+      "id": 398,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152710.png"
+    },
+    {
+      "id": 399,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152718.png"
+    },
+    {
+      "id": 400,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152726.png"
+    },
+    {
+      "id": 401,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152734.png"
+    },
+    {
+      "id": 402,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152748.png"
+    },
+    {
+      "id": 403,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152757.png"
+    },
+    {
+      "id": 404,
+      "sku_id": "ramy_300ml_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_300ml_carton/Screenshot 2026-07-20 152811.png"
+    },
+    {
+      "id": 405,
+      "sku_id": "ramy_annans_1l_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_annans_1l_carton/01.jpg"
+    },
+    {
+      "id": 406,
+      "sku_id": "ramy_annans_1l_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_annans_1l_carton/38-29.jpg"
+    },
+    {
+      "id": 407,
+      "sku_id": "ramy_annans_1l_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_annans_1l_carton/Screenshot 2026-07-20 152457.png"
+    },
+    {
+      "id": 408,
+      "sku_id": "ramy_annans_1l_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_annans_1l_carton/Screenshot 2026-07-20 152518.png"
+    },
+    {
+      "id": 409,
+      "sku_id": "ramy_annans_1l_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_annans_1l_carton/Screenshot 2026-07-20 152540.png"
+    },
+    {
+      "id": 410,
+      "sku_id": "ramy_annans_1l_carton",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_annans_1l_carton/Screenshot 2026-07-20 152601.png"
+    },
+    {
+      "id": 411,
+      "sku_id": "ramy_orange_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_orange_1l/0140_bottle_0.29.jpg"
+    },
+    {
+      "id": 412,
+      "sku_id": "ramy_orange_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_orange_1l/34-10.jpg"
+    },
+    {
+      "id": 413,
+      "sku_id": "ramy_orange_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_orange_1l/38-11.jpg"
+    },
+    {
+      "id": 414,
+      "sku_id": "ramy_orange_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_orange_1l/43223.png"
+    },
+    {
+      "id": 415,
+      "sku_id": "ramy_orange_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_orange_1l/87654.png"
+    },
+    {
+      "id": 416,
+      "sku_id": "ramy_orange_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/ramy_orange_1l/image.png"
+    },
+    {
+      "id": 417,
+      "sku_id": "rouiba_annans_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_annans_1l/20261012_215115_ff6e00_0017_0.60.jpg"
+    },
+    {
+      "id": 418,
+      "sku_id": "rouiba_annans_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_annans_1l/20261012_215115_ff6e00_0032_0.46.jpg"
+    },
+    {
+      "id": 419,
+      "sku_id": "rouiba_coctail_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_coctail_1l/34-16.jpg"
+    },
+    {
+      "id": 420,
+      "sku_id": "rouiba_excellence_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_excellence_1l/Screenshot 2026-07-20 152850.png"
+    },
+    {
+      "id": 421,
+      "sku_id": "rouiba_excellence_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_excellence_1l/Screenshot 2026-07-20 152911.png"
+    },
+    {
+      "id": 422,
+      "sku_id": "rouiba_excellence_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_excellence_1l/Screenshot 2026-07-20 152920.png"
+    },
+    {
+      "id": 423,
+      "sku_id": "rouiba_excellence_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_excellence_1l/Screenshot 2026-07-20 152928.png"
+    },
+    {
+      "id": 424,
+      "sku_id": "rouiba_excellence_mongo",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_excellence_mongo/34-2.jpg"
+    },
+    {
+      "id": 425,
+      "sku_id": "rouiba_excellence_mongo",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_excellence_mongo/9876.png"
+    },
+    {
+      "id": 426,
+      "sku_id": "rouiba_grenade_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_grenade_1l/36-11.jpg"
+    },
+    {
+      "id": 427,
+      "sku_id": "rouiba_grenade_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_grenade_1l/36-17.jpg"
+    },
+    {
+      "id": 428,
+      "sku_id": "rouiba_grenade_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_grenade_1l/36-44.jpg"
+    },
+    {
+      "id": 429,
+      "sku_id": "rouiba_grenade_1l",
+      "packaging_type": "carton",
+      "image_path": "data/single_products/carton/rouiba_grenade_1l/36-58.jpg"
+    }
+  ]
+}

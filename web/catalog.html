@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKU Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="catalog.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      Catalog
+    </div>
+    <span class="brand-sub">SKU photos &middot; visual search &middot; enroll</span>
+    <nav class="topbar-nav">
+      <a class="nav-link" href="index.html">Shelf recognition</a>
+      <a class="nav-link" href="dashboard.html">Data dashboard</a>
+    </nav>
+  </header>
+
+  <main class="container catalog">
+    <section class="summary-row" id="summary-row"></section>
+
+    <section class="card toolbar-card">
+      <div class="toolbar">
+        <input id="sku-search" class="catalog-search" type="search" placeholder="Search SKUs by name&hellip;" />
+        <div id="pack-chips" class="chips"></div>
+        <select id="coverage-filter" class="select">
+          <option value="all">All SKUs</option>
+          <option value="need">Needs more photos (&lt; 3)</option>
+          <option value="empty">Empty folders</option>
+        </select>
+        <select id="sort-key" class="select">
+          <option value="images_desc">Most photos first</option>
+          <option value="images_asc">Fewest photos first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+        <span class="toolbar-spacer"></span>
+        <button id="visual-btn" class="btn btn-ghost" type="button">Find by photo</button>
+        <button id="new-sku-btn" class="btn btn-primary" type="button">New SKU</button>
+      </div>
+      <p id="list-status" class="catalog-status">Loading catalog&hellip;</p>
+    </section>
+
+    <section id="visual-panel" class="card visual-panel hidden">
+      <h2 class="card-title">Search with a product photo</h2>
+      <p class="card-sub">
+        Uses your embedding model and FAISS gallery. Drop a crop or a phone photo of one product
+        to find the closest SKUs, then add it to a match or create a new SKU.
+      </p>
+      <div class="visual-row">
+        <div id="visual-drop" class="visual-drop" tabindex="0">
+          <p>Drop a product image, or <span class="dz-browse">browse</span></p>
+          <input id="visual-file" type="file" accept="image/jpeg,image/png,image/webp,image/bmp" hidden />
+        </div>
+        <div id="visual-query" class="visual-query hidden">
+          <img id="visual-query-img" alt="Query product" />
+          <button id="visual-clear" class="btn btn-ghost btn-sm" type="button">Clear</button>
+        </div>
+      </div>
+      <p id="visual-status" class="catalog-status hidden"></p>
+      <div id="visual-results" class="visual-results hidden"></div>
+    </section>
+
+    <section class="catalog-layout">
+      <div class="sku-pane">
+        <div id="sku-grid" class="sku-grid"></div>
+      </div>
+      <aside id="detail-pane" class="detail-pane card">
+        <div id="detail-empty" class="detail-empty">
+          <h2 class="card-title">Pick a SKU</h2>
+          <p class="card-sub">Search, sort by photo count, or find a product by dropping an image.</p>
+          <ul class="tips">
+            <li>Aim for <strong>5–10 photos</strong> per SKU, from different shelves and lighting — not copies of the same crop.</li>
+            <li>Name SKUs <strong>brand_line_flavor_volume</strong> (example: <code>ramy_125l_orange</code>) so size siblings stay distinct.</li>
+            <li>Use <strong>Find by photo</strong> before creating a SKU, to avoid enrolling a duplicate product.</li>
+            <li>Front-facing full products beat tiny or half-occluded crops. Delete weak shots from the grid.</li>
+            <li>After adding photos here the live gallery index is updated, so the next shelf analyze can match them.</li>
+          </ul>
+        </div>
+        <div id="detail-body" class="hidden"></div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="new-sku-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="new-sku-title">
+    <div class="modal-card">
+      <h2 id="new-sku-title" class="card-title">Add a SKU</h2>
+      <p class="card-sub">Creates a folder under <code>data/single_products/{packaging}/{sku}</code>. You can add photos now or later.</p>
+      <label class="field">
+        SKU id
+        <input id="new-sku-id" type="text" placeholder="ramy_125l_citron" autocomplete="off" />
+      </label>
+      <label class="field">
+        Packaging
+        <select id="new-sku-pack">
+          <option value="bottle">bottle</option>
+          <option value="can">can</option>
+          <option value="carton">carton</option>
+        </select>
+      </label>
+      <label class="field">
+        Photos (optional)
+        <input id="new-sku-files" type="file" accept="image/jpeg,image/png,image/webp,image/bmp" multiple />
+      </label>
+      <p id="new-sku-error" class="error hidden"></p>
+      <div class="modal-actions">
+        <button id="new-sku-cancel" class="btn btn-ghost" type="button">Cancel</button>
+        <button id="new-sku-save" class="btn btn-primary" type="button">Create SKU</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" alt="" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="catalog.js"></script>
+</body>
+
+</html>

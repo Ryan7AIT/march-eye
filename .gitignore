@@ -1,0 +1,62 @@
+# Virtual env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets / local config
+.env
+.env.*
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Hugging Face / Ultralytics caches
+.cache/
+hf_cache/
+
+# Local experiment dumps (not needed to run the app)
+dataset.zip
+gallery_pretrained/
+test/cropped_products/
+test/shelf_with_boxes.jpg
+
+# Training dumps. The web app only needs the two exceptions below.
+*.pt
+runs/*
+!runs/sku110k_s/
+runs/sku110k_s/*
+!runs/sku110k_s/weights/
+runs/sku110k_s/weights/*
+!runs/sku110k_s/weights/best.pt
+!runs/dinov3_ft/
+!runs/dinov3_ft/**
+runs/dinov3_ft/loss.csv
+runs/dinov3_ft/loss.png
+
+# Generated datasets
+dataset/
+yolo_data/
+tmp/
+
+# Photos the app does not load at runtime
+data/*
+!data/single_products/
+!data/single_products/**
+
+# Notebooks
+.ipynb_checkpoints/
