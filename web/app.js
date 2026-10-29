@@ -1,8 +1,15 @@
 "use strict";
 
-// When the page is opened via Live Server or another port, call the API on uvicorn.
-const API_BASE =
-  window.location.port === "8000" ? "" : "http://127.0.0.1:8000";
+// Same origin when served by uvicorn or nginx. Only point at local uvicorn
+// when a static preview (Live Server, etc.) is on another localhost port.
+const API_BASE = (() => {
+  const { hostname, port } = window.location;
+  const local = hostname === "localhost" || hostname === "127.0.0.1";
+  if (local && port && port !== "8019") {
+    return "http://127.0.0.1:8019";
+  }
+  return "";
+})();
 
 const dropzone = document.getElementById("dropzone");
 const fileInput = document.getElementById("file-input");

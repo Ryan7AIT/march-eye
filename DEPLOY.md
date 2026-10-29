@@ -81,10 +81,11 @@ Install Python, nginx, and OpenCV system libs:
 sudo apt update
 sudo apt install -y \
   python3.12 python3.12-venv python3-pip \
-  git rsync unzip \
+  git git-lfs rsync unzip \
   nginx \
   libgl1 libglib2.0-0 \
   build-essential
+git lfs install
 ```
 
 If `python3.12` is missing on Ubuntu 22.04:
@@ -104,23 +105,36 @@ Destination used below: `/home/shelf/ai-marchup-v2`. Prefer **git clone** now th
 
 ### Option A — git clone (preferred)
 
-On the VPS, after you push the repo (with Git LFS if you tracked `model.safetensors`):
+`model.safetensors` is stored with **Git LFS**, not as a normal git blob. A plain `git clone` without LFS leaves a ~130-byte *pointer* file. The app then crashes with `SafetensorError: header too large` because transformers tries to parse that text as weights.
+
+On the VPS, after you push the repo:
 
 ```bash
-# Git LFS, so the 327 MB embedder actually downloads
 sudo apt install -y git-lfs
 git lfs install
 
 git clone YOUR_REPO_URL /home/shelf/ai-marchup-v2
+# or: git clone YOUR_REPO_URL ~/march-eye
 cd /home/shelf/ai-marchup-v2
+git lfs pull
 mkdir -p tmp/web
 ```
 
-If clone skipped LFS and `runs/dinov3_ft/model.safetensors` is a tiny pointer file, copy the real weights from your PC:
+Confirm the embedder is the real ~327 MB file, not a pointer:
+
+```bash
+ls -lh runs/dinov3_ft/model.safetensors
+head -c 200 runs/dinov3_ft/model.safetensors
+```
+
+- **Good:** size is about **327M**. The first bytes are binary, not English text.
+- **Bad:** size is ~130 bytes and the first line is `version https://git-lfs.github.com/spec/v1`. Run `git lfs pull` again, or copy the file from the PC:
 
 ```powershell
 scp runs\dinov3_ft\model.safetensors USER@YOUR_VPS_IP:/home/shelf/ai-marchup-v2/runs/dinov3_ft/
 ```
+
+A GitHub **zip download** of the repo does **not** include LFS payloads. Use git clone + `git lfs pull`, or `scp` the weights.
 
 ### Option B — rsync / scp from the PC
 
@@ -136,7 +150,9 @@ rsync -avh --progress \
 
 ### Option C — zip, upload, unzip
 
-Zip the repo **without** `.venv`, `tmp`, `data/SKU-110K`. On the VPS:
+Zip the repo **without** `.venv`, `tmp`, `data/SKU-110K`. A GitHub “Download ZIP” **does not** include Git LFS files, so `model.safetensors` will be a pointer. Prefer Option A, or zip a local working tree that already has the 327 MB file.
+
+On the VPS:
 
 ```bash
 cd /home/shelf
@@ -155,12 +171,25 @@ source .venv/bin/activate
 pip install -U pip wheel
 ```
 
-This VPS has **no GPU**. Install the CPU wheel of PyTorch (not a CUDA build):
+This VPS has **no GPU**. Install **matching CPU wheels of `torch` and `torchvision` from the same index**, then the rest of the deps:
 
 ```bash
-pip install torch --index-url https://download.pytorch.org/whl/cpu
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
 ```
+
+**Why both, from the CPU index:** `pip install torch --index-url .../cpu` then `pip install -r requirements.txt` lets `open-clip-torch` / `ultralytics` pull **PyPI** `torchvision`. That wheel is built against a different (often CUDA) `torch`. Startup then dies with:
+
+`RuntimeError: operator torchvision::nms does not exist`
+
+If that already happened, reinstall the pair together:
+
+```bash
+pip install --force-reinstall torch torchvision --index-url https://download.pytorch.org/whl/cpu
+python -c "import torch, torchvision; print(torch.__version__); print(torchvision.__version__); print('cuda', torch.cuda.is_available())"
+```
+
+You want versions ending in `+cpu` and `cuda False`.
 
 `requirements.txt` already pins `faiss-cpu`. Do not install `faiss-gpu` or a CUDA PyTorch build here.
 
@@ -179,7 +208,16 @@ If startup tries to download `facebook/dinov3-vitb16-pretrain-lvd1689m`, that re
 ```bash
 source /home/shelf/ai-marchup-v2/.venv/bin/activate
 pip install huggingface_hub
-huggingface-cli login
+hf auth login
+# confirm: hf auth whoami
+```
+
+**Why not `huggingface-cli login`:** `huggingface_hub` 2.x no longer installs the `huggingface-cli` command (`command not found`). The CLI is **`hf`**. If `hf` is also missing from `PATH`:
+
+```bash
+python -m huggingface_hub.cli.hf auth login
+# or
+.venv/bin/hf auth login
 ```
 
 Or put the token in the systemd unit (`Environment=HF_TOKEN=...`) — do not commit it.
@@ -357,12 +395,38 @@ Tell viewers:
 
 ## 12. Troubleshooting
 
+### Hugging Face CLI missing (`huggingface-cli: command not found`)
+
+`huggingface_hub` is installed, but **2.x removed `huggingface-cli`**. Use:
+
+```bash
+hf auth login
+```
+
+If `hf` is not on `PATH` either: `python -m huggingface_hub.cli.hf auth login`.
+
+### `RuntimeError: operator torchvision::nms does not exist`
+
+`torch` and `torchvision` came from different indexes (CPU torch + default PyPI torchvision). Reinstall both from the CPU wheel index (see [section 5](#5-python-environment-and-dependencies)). Check with `print(torch.__version__, torchvision.__version__)`.
+
+### `SafetensorError: Error while deserializing header: header too large`
+
+`runs/dinov3_ft/model.safetensors` is an LFS **pointer** (or a truncated/HTML download), not the 327 MB checkpoint. `ls -lh` that file; if it is tiny, `git lfs pull` or `scp` the real weights (see [section 4](#4-copy-the-project-onto-the-vps)).
+
+### Browser CORS error on `/api/analyze` (upload fails in ~10 ms)
+
+The HTML loads from the VPS, but older `web/app.js` sent analyze to `http://127.0.0.1:8000` whenever the page was **not** on port 8000 (nginx uses port 80/443). The browser then calls **the visitor's own machine**, which is a cross-origin request that fails immediately and shows as “CORS error”.
+
+Current `app.js` uses the **same origin** (nginx → uvicorn) unless you are on localhost with a Live Server port. Copy the updated `web/app.js` to the VPS (git pull or scp). Hard-refresh the page (`Ctrl+Shift+R`). Catalog and dashboard were already same-origin, so they can work while analyze does not.
+
+### Other
+
 | Symptom | What to do |
 |---------|------------|
 | `Missing gallery files` / FAISS error | `gallery/faiss.index` and `gallery/metadata.json` must be in the clone. They must have been built with `runs/dinov3_ft`. |
 | `FileNotFoundError` for `best.pt` | `runs/sku110k_s/weights/best.pt` missing from the clone. That is `PipelineConfig.yolo_weights`. |
 | Tiny `model.safetensors` (~100 bytes) | Git LFS pointer, not the real weights. Run `git lfs pull` or `scp` the 327 MB file. |
-| Hugging Face gated / 401 | Log in with `huggingface-cli login`, or copy a complete `runs/dinov3_ft` folder so nothing is downloaded. |
+| Hugging Face gated / 401 | Log in with `hf auth login`, or copy a complete `runs/dinov3_ft` folder so nothing is downloaded. |
 | `Killed` / exit 137 / OOM | VPS RAM too small. Use 16 GB, keep `--workers 1`, close other services. |
 | Upload 413 | nginx `client_max_body_size` is below 25M, or the file is larger than 25 MB. |
 | Analyze times out | Raise `proxy_read_timeout` (already 300s above). CPU VPS + a huge photo is slow. |
@@ -430,4 +494,4 @@ runs/dinov3_ft/               # embedder
 tmp/web/                      # created at runtime
 ```
 
-That is the whole demo: clone the repo (plus Git LFS for the embedder), install **CPU** PyTorch, systemd, nginx, share the URL.
+That is the whole demo: clone with **Git LFS** (so the embedder is the real 327 MB file), install matching **CPU** `torch` + `torchvision`, systemd, nginx, share the URL.
